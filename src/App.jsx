@@ -7,7 +7,7 @@ import UsersList from './components/UsersList';
 
 function App() {
   const [userList, SetUserList] = useState([]);
-  const[userSelected, SetUserSelected] = useState([null])
+  const[userSelected, SetUserSelected] = useState(null)
 
   useEffect(() => {
     axios.get('https://users-crud.academlo.tech/users/')

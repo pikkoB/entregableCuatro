@@ -15,22 +15,25 @@ const UsersForm = ({getUser , userSelected, selectUser}) => {
         }
     },[userSelected])
 
-    const submit = (data) =>{
+    const submit = (data) => {
+        console.log(data)
         if (userSelected) {
             axios.put(`https://users-crud.academlo.tech/users/${userSelected.id}/`, data)
-            .then(()=> {
-                getUser()
-                selectUser(null)
-            })
-        }else{ 
-        axios.post(`https://users-crud.academlo.tech/users/${user.id}/`, data)
-        .then(() => {
+                .then(() => {
+                    getUser()
+                    selectUser(null)
+                })
+        } else {
+            axios.post(`https://users-crud.academlo.tech/users/`, data)
+                .then(() => {
 
-         getUser()
-         reset(resetUser)
-        });
-    }}
+                    getUser()
+                    reset(resetUser)
+                });
+        }
+    }
 
+  
     return (
        <form onSubmit={handleSubmit(submit)}>
         <h2>New User</h2>
