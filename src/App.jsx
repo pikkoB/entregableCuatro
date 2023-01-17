@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Users</h1>
+      <h1>Users </h1>
       < UsersForm getUser= {getUser} 
       userSelected={userSelected}
       selectUser={selectUser}

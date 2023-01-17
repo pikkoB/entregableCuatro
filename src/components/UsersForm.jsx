@@ -62,7 +62,7 @@ const UsersForm = ({getUser , userSelected, selectUser}) => {
             <input type='date' id='birthday' required
             {...register('birthday')} />
         </div>
-        <button>Upload</button>
+        <button className='btn-form'>Upload</button>
     </form>
     );
 };

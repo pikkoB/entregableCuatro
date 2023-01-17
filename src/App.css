@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+body{
+  background-color: lightblue;
+}
 
 .logo {
   height: 6em;
@@ -15,6 +18,33 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+form{
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 1rem;
+  background-color: white;
+}
+.btn-form{
+  background-color: lightblue;
+  width: 80%;
+  padding: .3rem;
+  margin-top: 1rem;
+  border: 2px solid black;
+}
+.user-card{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  
+}
+.items-card{
+  width: 300px;
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+ 
 }
 
 @keyframes logo-spin {
